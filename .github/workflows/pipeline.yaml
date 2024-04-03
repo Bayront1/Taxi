@@ -21,8 +21,7 @@ jobs:
 
     - name: Install StyleCop
       run: |
-        cd TaxiAPI/TaxiAPI.csproj
-        dotnet add package StyleCop.Analyzers
+        dotnet add TaxiAPI/TaxiAPI.csproj package StyleCop.Analyzers
 
     - name: Build and check syntax
       run: |
